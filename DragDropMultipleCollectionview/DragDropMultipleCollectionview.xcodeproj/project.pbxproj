@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11BE9A752152363200AF4731 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE9A742152363200AF4731 /* CGRectExtension.swift */; };
+		11BE9A7721524E2500AF4731 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE9A7621524E2500AF4731 /* UIColorExtension.swift */; };
+		11BE9A7921524ECD00AF4731 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE9A7821524ECD00AF4731 /* ColorCell.swift */; };
+		DE613F25214E5DAC0045710D /* DragDropManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE613F24214E5DAC0045710D /* DragDropManager.swift */; };
+		DEF8C7EE212D7CBF001B97B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8C7ED212D7CBF001B97B7 /* AppDelegate.swift */; };
+		DEF8C7F0212D7CBF001B97B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8C7EF212D7CBF001B97B7 /* ViewController.swift */; };
+		DEF8C7F3212D7CBF001B97B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C7F1212D7CBF001B97B7 /* Main.storyboard */; };
+		DEF8C7F5212D7CC1001B97B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C7F4212D7CC1001B97B7 /* Assets.xcassets */; };
+		DEF8C7F8212D7CC1001B97B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C7F6212D7CC1001B97B7 /* LaunchScreen.storyboard */; };
+		DEF8C803212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8C802212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.swift */; };
+		DEF8C80E212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8C80D212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.swift */; };
+		DEF8C81C212D7CE4001B97B7 /* DragDropCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8C81B212D7CE4001B97B7 /* DragDropCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEF8C7FF212D7CC1001B97B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF8C7E2212D7CBF001B97B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF8C7E9212D7CBF001B97B7;
+			remoteInfo = DragDropMultipleCollectionview;
+		};
+		DEF8C80A212D7CC1001B97B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEF8C7E2212D7CBF001B97B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF8C7E9212D7CBF001B97B7;
+			remoteInfo = DragDropMultipleCollectionview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11BE9A742152363200AF4731 /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		11BE9A7621524E2500AF4731 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		11BE9A7821524ECD00AF4731 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		DE613F24214E5DAC0045710D /* DragDropManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropManager.swift; sourceTree = "<group>"; };
+		DEF8C7EA212D7CBF001B97B7 /* DragDropMultipleCollectionview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragDropMultipleCollectionview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF8C7ED212D7CBF001B97B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEF8C7EF212D7CBF001B97B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEF8C7F2212D7CBF001B97B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEF8C7F4212D7CC1001B97B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEF8C7F7212D7CC1001B97B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEF8C7F9212D7CC1001B97B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF8C7FE212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragDropMultipleCollectionviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF8C802212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropMultipleCollectionviewTests.swift; sourceTree = "<group>"; };
+		DEF8C804212D7CC1001B97B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF8C809212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragDropMultipleCollectionviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF8C80D212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropMultipleCollectionviewUITests.swift; sourceTree = "<group>"; };
+		DEF8C80F212D7CC1001B97B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF8C81B212D7CE4001B97B7 /* DragDropCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropCollectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEF8C7E7212D7CBF001B97B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C7FB212D7CC1001B97B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C806212D7CC1001B97B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEF8C7E1212D7CBF001B97B7 = {
+			isa = PBXGroup;
+			children = (
+				DEF8C7EC212D7CBF001B97B7 /* DragDropMultipleCollectionview */,
+				DEF8C801212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests */,
+				DEF8C80C212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests */,
+				DEF8C7EB212D7CBF001B97B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF8C7EB212D7CBF001B97B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8C7EA212D7CBF001B97B7 /* DragDropMultipleCollectionview.app */,
+				DEF8C7FE212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.xctest */,
+				DEF8C809212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEF8C7EC212D7CBF001B97B7 /* DragDropMultipleCollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8C7ED212D7CBF001B97B7 /* AppDelegate.swift */,
+				DEF8C7EF212D7CBF001B97B7 /* ViewController.swift */,
+				DEF8C7F1212D7CBF001B97B7 /* Main.storyboard */,
+				DEF8C7F4212D7CC1001B97B7 /* Assets.xcassets */,
+				DEF8C7F6212D7CC1001B97B7 /* LaunchScreen.storyboard */,
+				DEF8C7F9212D7CC1001B97B7 /* Info.plist */,
+				DEF8C81B212D7CE4001B97B7 /* DragDropCollectionView.swift */,
+				DE613F24214E5DAC0045710D /* DragDropManager.swift */,
+				11BE9A742152363200AF4731 /* CGRectExtension.swift */,
+				11BE9A7621524E2500AF4731 /* UIColorExtension.swift */,
+				11BE9A7821524ECD00AF4731 /* ColorCell.swift */,
+			);
+			path = DragDropMultipleCollectionview;
+			sourceTree = "<group>";
+		};
+		DEF8C801212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8C802212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.swift */,
+				DEF8C804212D7CC1001B97B7 /* Info.plist */,
+			);
+			path = DragDropMultipleCollectionviewTests;
+			sourceTree = "<group>";
+		};
+		DEF8C80C212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8C80D212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.swift */,
+				DEF8C80F212D7CC1001B97B7 /* Info.plist */,
+			);
+			path = DragDropMultipleCollectionviewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEF8C7E9212D7CBF001B97B7 /* DragDropMultipleCollectionview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF8C812212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionview" */;
+			buildPhases = (
+				DEF8C7E6212D7CBF001B97B7 /* Sources */,
+				DEF8C7E7212D7CBF001B97B7 /* Frameworks */,
+				DEF8C7E8212D7CBF001B97B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragDropMultipleCollectionview;
+			productName = DragDropMultipleCollectionview;
+			productReference = DEF8C7EA212D7CBF001B97B7 /* DragDropMultipleCollectionview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEF8C7FD212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF8C815212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionviewTests" */;
+			buildPhases = (
+				DEF8C7FA212D7CC1001B97B7 /* Sources */,
+				DEF8C7FB212D7CC1001B97B7 /* Frameworks */,
+				DEF8C7FC212D7CC1001B97B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF8C800212D7CC1001B97B7 /* PBXTargetDependency */,
+			);
+			name = DragDropMultipleCollectionviewTests;
+			productName = DragDropMultipleCollectionviewTests;
+			productReference = DEF8C7FE212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEF8C808212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF8C818212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionviewUITests" */;
+			buildPhases = (
+				DEF8C805212D7CC1001B97B7 /* Sources */,
+				DEF8C806212D7CC1001B97B7 /* Frameworks */,
+				DEF8C807212D7CC1001B97B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEF8C80B212D7CC1001B97B7 /* PBXTargetDependency */,
+			);
+			name = DragDropMultipleCollectionviewUITests;
+			productName = DragDropMultipleCollectionviewUITests;
+			productReference = DEF8C809212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEF8C7E2212D7CBF001B97B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "みかん方や";
+				TargetAttributes = {
+					DEF8C7E9212D7CBF001B97B7 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DEF8C7FD212D7CC1001B97B7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DEF8C7E9212D7CBF001B97B7;
+					};
+					DEF8C808212D7CC1001B97B7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DEF8C7E9212D7CBF001B97B7;
+					};
+				};
+			};
+			buildConfigurationList = DEF8C7E5212D7CBF001B97B7 /* Build configuration list for PBXProject "DragDropMultipleCollectionview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEF8C7E1212D7CBF001B97B7;
+			productRefGroup = DEF8C7EB212D7CBF001B97B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF8C7E9212D7CBF001B97B7 /* DragDropMultipleCollectionview */,
+				DEF8C7FD212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests */,
+				DEF8C808212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF8C7E8212D7CBF001B97B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF8C7F8212D7CC1001B97B7 /* LaunchScreen.storyboard in Resources */,
+				DEF8C7F5212D7CC1001B97B7 /* Assets.xcassets in Resources */,
+				DEF8C7F3212D7CBF001B97B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C7FC212D7CC1001B97B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C807212D7CC1001B97B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEF8C7E6212D7CBF001B97B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BE9A752152363200AF4731 /* CGRectExtension.swift in Sources */,
+				DEF8C7F0212D7CBF001B97B7 /* ViewController.swift in Sources */,
+				11BE9A7921524ECD00AF4731 /* ColorCell.swift in Sources */,
+				DEF8C81C212D7CE4001B97B7 /* DragDropCollectionView.swift in Sources */,
+				DE613F25214E5DAC0045710D /* DragDropManager.swift in Sources */,
+				DEF8C7EE212D7CBF001B97B7 /* AppDelegate.swift in Sources */,
+				11BE9A7721524E2500AF4731 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C7FA212D7CC1001B97B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF8C803212D7CC1001B97B7 /* DragDropMultipleCollectionviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF8C805212D7CC1001B97B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF8C80E212D7CC1001B97B7 /* DragDropMultipleCollectionviewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEF8C800212D7CC1001B97B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF8C7E9212D7CBF001B97B7 /* DragDropMultipleCollectionview */;
+			targetProxy = DEF8C7FF212D7CC1001B97B7 /* PBXContainerItemProxy */;
+		};
+		DEF8C80B212D7CC1001B97B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF8C7E9212D7CBF001B97B7 /* DragDropMultipleCollectionview */;
+			targetProxy = DEF8C80A212D7CC1001B97B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEF8C7F1212D7CBF001B97B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF8C7F2212D7CBF001B97B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEF8C7F6212D7CC1001B97B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF8C7F7212D7CC1001B97B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEF8C810212D7CC1001B97B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEF8C811212D7CC1001B97B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEF8C813212D7CC1001B97B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEF8C814212D7CC1001B97B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEF8C816212D7CC1001B97B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragDropMultipleCollectionview.app/DragDropMultipleCollectionview";
+			};
+			name = Debug;
+		};
+		DEF8C817212D7CC1001B97B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragDropMultipleCollectionview.app/DragDropMultipleCollectionview";
+			};
+			name = Release;
+		};
+		DEF8C819212D7CC1001B97B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DragDropMultipleCollectionview;
+			};
+			name = Debug;
+		};
+		DEF8C81A212D7CC1001B97B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DragDropMultipleCollectionviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.DragDropMultipleCollectionviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DragDropMultipleCollectionview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEF8C7E5212D7CBF001B97B7 /* Build configuration list for PBXProject "DragDropMultipleCollectionview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF8C810212D7CC1001B97B7 /* Debug */,
+				DEF8C811212D7CC1001B97B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF8C812212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF8C813212D7CC1001B97B7 /* Debug */,
+				DEF8C814212D7CC1001B97B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF8C815212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF8C816212D7CC1001B97B7 /* Debug */,
+				DEF8C817212D7CC1001B97B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF8C818212D7CC1001B97B7 /* Build configuration list for PBXNativeTarget "DragDropMultipleCollectionviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF8C819212D7CC1001B97B7 /* Debug */,
+				DEF8C81A212D7CC1001B97B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEF8C7E2212D7CBF001B97B7 /* Project object */;
+}

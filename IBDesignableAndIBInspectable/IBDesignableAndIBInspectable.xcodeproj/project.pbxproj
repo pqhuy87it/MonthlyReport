@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEACA1F71E34660600FB2BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA1F61E34660600FB2BBA /* AppDelegate.swift */; };
+		DEACA1F91E34660600FB2BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA1F81E34660600FB2BBA /* ViewController.swift */; };
+		DEACA1FC1E34660600FB2BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEACA1FA1E34660600FB2BBA /* Main.storyboard */; };
+		DEACA1FE1E34660600FB2BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEACA1FD1E34660600FB2BBA /* Assets.xcassets */; };
+		DEACA2011E34660600FB2BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEACA1FF1E34660600FB2BBA /* LaunchScreen.storyboard */; };
+		DEACA20C1E34660600FB2BBA /* IBDesignableAndIBInspectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA20B1E34660600FB2BBA /* IBDesignableAndIBInspectableTests.swift */; };
+		DEACA2171E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA2161E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.swift */; };
+		DEACA2251E34681300FB2BBA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA2241E34681300FB2BBA /* CustomView.swift */; };
+		DEACA2271E346C7700FB2BBA /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA2261E346C7700FB2BBA /* MyCustomView.swift */; };
+		DEACA2291E34700F00FB2BBA /* Skype_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEACA2281E34700F00FB2BBA /* Skype_logo.jpg */; };
+		DEACA22B1E34F43600FB2BBA /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA22A1E34F43600FB2BBA /* LayoutConstraint.swift */; };
+		DEACA22D1E34F84300FB2BBA /* CTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA22C1E34F84300FB2BBA /* CTLabel.swift */; };
+		DEACA22F1E34FA2300FB2BBA /* CTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEACA22E1E34FA2300FB2BBA /* CTButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEACA2081E34660600FB2BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEACA1EB1E34660600FB2BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEACA1F21E34660600FB2BBA;
+			remoteInfo = IBDesignableAndIBInspectable;
+		};
+		DEACA2131E34660600FB2BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEACA1EB1E34660600FB2BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEACA1F21E34660600FB2BBA;
+			remoteInfo = IBDesignableAndIBInspectable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEACA1F31E34660600FB2BBA /* IBDesignableAndIBInspectable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBDesignableAndIBInspectable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEACA1F61E34660600FB2BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEACA1F81E34660600FB2BBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEACA1FB1E34660600FB2BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEACA1FD1E34660600FB2BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEACA2001E34660600FB2BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEACA2021E34660600FB2BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEACA2071E34660600FB2BBA /* IBDesignableAndIBInspectableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBDesignableAndIBInspectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEACA20B1E34660600FB2BBA /* IBDesignableAndIBInspectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableAndIBInspectableTests.swift; sourceTree = "<group>"; };
+		DEACA20D1E34660600FB2BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEACA2121E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBDesignableAndIBInspectableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEACA2161E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignableAndIBInspectableUITests.swift; sourceTree = "<group>"; };
+		DEACA2181E34660600FB2BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEACA2241E34681300FB2BBA /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		DEACA2261E346C7700FB2BBA /* MyCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+		DEACA2281E34700F00FB2BBA /* Skype_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skype_logo.jpg; sourceTree = "<group>"; };
+		DEACA22A1E34F43600FB2BBA /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		DEACA22C1E34F84300FB2BBA /* CTLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTLabel.swift; sourceTree = "<group>"; };
+		DEACA22E1E34FA2300FB2BBA /* CTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEACA1F01E34660600FB2BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA2041E34660600FB2BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA20F1E34660600FB2BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEACA1EA1E34660600FB2BBA = {
+			isa = PBXGroup;
+			children = (
+				DEACA1F51E34660600FB2BBA /* IBDesignableAndIBInspectable */,
+				DEACA20A1E34660600FB2BBA /* IBDesignableAndIBInspectableTests */,
+				DEACA2151E34660600FB2BBA /* IBDesignableAndIBInspectableUITests */,
+				DEACA1F41E34660600FB2BBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEACA1F41E34660600FB2BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEACA1F31E34660600FB2BBA /* IBDesignableAndIBInspectable.app */,
+				DEACA2071E34660600FB2BBA /* IBDesignableAndIBInspectableTests.xctest */,
+				DEACA2121E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEACA1F51E34660600FB2BBA /* IBDesignableAndIBInspectable */ = {
+			isa = PBXGroup;
+			children = (
+				DEACA2281E34700F00FB2BBA /* Skype_logo.jpg */,
+				DEACA1F61E34660600FB2BBA /* AppDelegate.swift */,
+				DEACA1F81E34660600FB2BBA /* ViewController.swift */,
+				DEACA1FA1E34660600FB2BBA /* Main.storyboard */,
+				DEACA1FD1E34660600FB2BBA /* Assets.xcassets */,
+				DEACA1FF1E34660600FB2BBA /* LaunchScreen.storyboard */,
+				DEACA2021E34660600FB2BBA /* Info.plist */,
+				DEACA2241E34681300FB2BBA /* CustomView.swift */,
+				DEACA2261E346C7700FB2BBA /* MyCustomView.swift */,
+				DEACA22A1E34F43600FB2BBA /* LayoutConstraint.swift */,
+				DEACA22C1E34F84300FB2BBA /* CTLabel.swift */,
+				DEACA22E1E34FA2300FB2BBA /* CTButton.swift */,
+			);
+			path = IBDesignableAndIBInspectable;
+			sourceTree = "<group>";
+		};
+		DEACA20A1E34660600FB2BBA /* IBDesignableAndIBInspectableTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEACA20B1E34660600FB2BBA /* IBDesignableAndIBInspectableTests.swift */,
+				DEACA20D1E34660600FB2BBA /* Info.plist */,
+			);
+			path = IBDesignableAndIBInspectableTests;
+			sourceTree = "<group>";
+		};
+		DEACA2151E34660600FB2BBA /* IBDesignableAndIBInspectableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEACA2161E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.swift */,
+				DEACA2181E34660600FB2BBA /* Info.plist */,
+			);
+			path = IBDesignableAndIBInspectableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEACA1F21E34660600FB2BBA /* IBDesignableAndIBInspectable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEACA21B1E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectable" */;
+			buildPhases = (
+				DEACA1EF1E34660600FB2BBA /* Sources */,
+				DEACA1F01E34660600FB2BBA /* Frameworks */,
+				DEACA1F11E34660600FB2BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBDesignableAndIBInspectable;
+			productName = IBDesignableAndIBInspectable;
+			productReference = DEACA1F31E34660600FB2BBA /* IBDesignableAndIBInspectable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEACA2061E34660600FB2BBA /* IBDesignableAndIBInspectableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEACA21E1E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectableTests" */;
+			buildPhases = (
+				DEACA2031E34660600FB2BBA /* Sources */,
+				DEACA2041E34660600FB2BBA /* Frameworks */,
+				DEACA2051E34660600FB2BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEACA2091E34660600FB2BBA /* PBXTargetDependency */,
+			);
+			name = IBDesignableAndIBInspectableTests;
+			productName = IBDesignableAndIBInspectableTests;
+			productReference = DEACA2071E34660600FB2BBA /* IBDesignableAndIBInspectableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEACA2111E34660600FB2BBA /* IBDesignableAndIBInspectableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEACA2211E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectableUITests" */;
+			buildPhases = (
+				DEACA20E1E34660600FB2BBA /* Sources */,
+				DEACA20F1E34660600FB2BBA /* Frameworks */,
+				DEACA2101E34660600FB2BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEACA2141E34660600FB2BBA /* PBXTargetDependency */,
+			);
+			name = IBDesignableAndIBInspectableUITests;
+			productName = IBDesignableAndIBInspectableUITests;
+			productReference = DEACA2121E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEACA1EB1E34660600FB2BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Framgia, Inc";
+				TargetAttributes = {
+					DEACA1F21E34660600FB2BBA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DEACA2061E34660600FB2BBA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DEACA1F21E34660600FB2BBA;
+					};
+					DEACA2111E34660600FB2BBA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DEACA1F21E34660600FB2BBA;
+					};
+				};
+			};
+			buildConfigurationList = DEACA1EE1E34660600FB2BBA /* Build configuration list for PBXProject "IBDesignableAndIBInspectable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEACA1EA1E34660600FB2BBA;
+			productRefGroup = DEACA1F41E34660600FB2BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEACA1F21E34660600FB2BBA /* IBDesignableAndIBInspectable */,
+				DEACA2061E34660600FB2BBA /* IBDesignableAndIBInspectableTests */,
+				DEACA2111E34660600FB2BBA /* IBDesignableAndIBInspectableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEACA1F11E34660600FB2BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEACA2011E34660600FB2BBA /* LaunchScreen.storyboard in Resources */,
+				DEACA2291E34700F00FB2BBA /* Skype_logo.jpg in Resources */,
+				DEACA1FE1E34660600FB2BBA /* Assets.xcassets in Resources */,
+				DEACA1FC1E34660600FB2BBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA2051E34660600FB2BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA2101E34660600FB2BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEACA1EF1E34660600FB2BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEACA22F1E34FA2300FB2BBA /* CTButton.swift in Sources */,
+				DEACA22B1E34F43600FB2BBA /* LayoutConstraint.swift in Sources */,
+				DEACA2251E34681300FB2BBA /* CustomView.swift in Sources */,
+				DEACA2271E346C7700FB2BBA /* MyCustomView.swift in Sources */,
+				DEACA22D1E34F84300FB2BBA /* CTLabel.swift in Sources */,
+				DEACA1F91E34660600FB2BBA /* ViewController.swift in Sources */,
+				DEACA1F71E34660600FB2BBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA2031E34660600FB2BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEACA20C1E34660600FB2BBA /* IBDesignableAndIBInspectableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEACA20E1E34660600FB2BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEACA2171E34660600FB2BBA /* IBDesignableAndIBInspectableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEACA2091E34660600FB2BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEACA1F21E34660600FB2BBA /* IBDesignableAndIBInspectable */;
+			targetProxy = DEACA2081E34660600FB2BBA /* PBXContainerItemProxy */;
+		};
+		DEACA2141E34660600FB2BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEACA1F21E34660600FB2BBA /* IBDesignableAndIBInspectable */;
+			targetProxy = DEACA2131E34660600FB2BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEACA1FA1E34660600FB2BBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEACA1FB1E34660600FB2BBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEACA1FF1E34660600FB2BBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEACA2001E34660600FB2BBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEACA2191E34660600FB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEACA21A1E34660600FB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEACA21C1E34660600FB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IBDesignableAndIBInspectable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEACA21D1E34660600FB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IBDesignableAndIBInspectable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEACA21F1E34660600FB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IBDesignableAndIBInspectableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBDesignableAndIBInspectable.app/IBDesignableAndIBInspectable";
+			};
+			name = Debug;
+		};
+		DEACA2201E34660600FB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IBDesignableAndIBInspectableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBDesignableAndIBInspectable.app/IBDesignableAndIBInspectable";
+			};
+			name = Release;
+		};
+		DEACA2221E34660600FB2BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBDesignableAndIBInspectableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IBDesignableAndIBInspectable;
+			};
+			name = Debug;
+		};
+		DEACA2231E34660600FB2BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = IBDesignableAndIBInspectableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Framgia.IBDesignableAndIBInspectableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = IBDesignableAndIBInspectable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEACA1EE1E34660600FB2BBA /* Build configuration list for PBXProject "IBDesignableAndIBInspectable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEACA2191E34660600FB2BBA /* Debug */,
+				DEACA21A1E34660600FB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEACA21B1E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEACA21C1E34660600FB2BBA /* Debug */,
+				DEACA21D1E34660600FB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEACA21E1E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEACA21F1E34660600FB2BBA /* Debug */,
+				DEACA2201E34660600FB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEACA2211E34660600FB2BBA /* Build configuration list for PBXNativeTarget "IBDesignableAndIBInspectableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEACA2221E34660600FB2BBA /* Debug */,
+				DEACA2231E34660600FB2BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEACA1EB1E34660600FB2BBA /* Project object */;
+}

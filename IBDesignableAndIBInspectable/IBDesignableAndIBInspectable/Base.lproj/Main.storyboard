@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBDesignableAndIBInspectable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1e-S2-vYV">
+                                <rect key="frame" x="250" y="40" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="21R-fn-xsd"/>
+                                    <constraint firstAttribute="width" constant="100" id="FRD-Ty-zO5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvG-x5-Erh" customClass="CustomView" customModule="IBDesignableAndIBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="250" y="160" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Kgk-dn-Qgh"/>
+                                    <constraint firstAttribute="width" constant="100" id="qkG-KM-7M9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXM-2T-fe3" customClass="MyCustomView" customModule="IBDesignableAndIBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="250" y="280" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.075668181779999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Agc-qA-wBg"/>
+                                    <constraint firstAttribute="width" constant="100" id="nf0-lF-5k7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pham Quang Huy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmb-rk-CnF">
+                                <rect key="frame" x="231" y="400" width="138.5" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pham Quang Huy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-8U-ZUg" customClass="CTLabel" customModule="IBDesignableAndIBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="231" y="436" width="138.5" height="19"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="increaseH">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhw-UB-d9m">
+                                <rect key="frame" x="225" y="475" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ZwV-Mc-0xh"/>
+                                    <constraint firstAttribute="height" constant="30" id="yuk-L8-YnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Pham Quang Huy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tq-BY-dBx" customClass="CTButton" customModule="IBDesignableAndIBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="225" y="525" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LuT-Nz-Y2m"/>
+                                    <constraint firstAttribute="width" constant="150" id="m5Y-cM-pLl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Pham Quang Huy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="increaseH">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hvG-x5-Erh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xp-hl-o6w"/>
+                            <constraint firstItem="Xhw-UB-d9m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9wv-pV-PDe"/>
+                            <constraint firstItem="K1e-S2-vYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Eq3-6Q-cXr"/>
+                            <constraint firstItem="6Nj-8U-ZUg" firstAttribute="top" secondItem="Zmb-rk-CnF" secondAttribute="bottom" constant="20" id="GqW-tK-g6z"/>
+                            <constraint firstItem="K1e-S2-vYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jra-mg-W5y"/>
+                            <constraint firstItem="2Tq-BY-dBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9G-J6-cQR"/>
+                            <constraint firstItem="cXM-2T-fe3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TNR-eN-bYg"/>
+                            <constraint firstItem="Zmb-rk-CnF" firstAttribute="top" secondItem="cXM-2T-fe3" secondAttribute="bottom" constant="20" id="WSW-nJ-kmX"/>
+                            <constraint firstItem="2Tq-BY-dBx" firstAttribute="top" secondItem="Xhw-UB-d9m" secondAttribute="bottom" constant="20" id="Wgs-DW-WOM"/>
+                            <constraint firstItem="cXM-2T-fe3" firstAttribute="top" secondItem="hvG-x5-Erh" secondAttribute="bottom" constant="20" id="Wig-Ea-miZ" customClass="LayoutConstraint" customModule="IBDesignableAndIBInspectable" customModuleProvider="target"/>
+                            <constraint firstItem="Zmb-rk-CnF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z7h-7L-fII"/>
+                            <constraint firstItem="6Nj-8U-ZUg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mIU-6A-JVp"/>
+                            <constraint firstItem="Xhw-UB-d9m" firstAttribute="top" secondItem="6Nj-8U-ZUg" secondAttribute="bottom" constant="20" id="wY4-Hf-1Yd"/>
+                            <constraint firstItem="hvG-x5-Erh" firstAttribute="top" secondItem="K1e-S2-vYV" secondAttribute="bottom" constant="20" id="yZM-Vc-KFv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="-195"/>
+        </scene>
+    </scenes>
+</document>

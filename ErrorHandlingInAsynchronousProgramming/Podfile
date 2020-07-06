@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+def pods
+    pod 'Alamofire', '3.4.1'
+    pod 'SwiftyJSON', '2.3.2'
+end
+
+target 'ErrorHandlingInAsynchronousProgramming' do
+  pods
+end
+

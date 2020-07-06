@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+def pods
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod "PromiseKit", '3.5'
+end
+
+target 'UsingClosureProtocol' do
+  pods
+end

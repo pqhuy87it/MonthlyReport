@@ -1,0 +1,45 @@
+https://stackoverflow.com/questions/39676939/how-does-string-index-work-in-swift
+
+var str = "Hello, playground"
+
+// character
+str[str.startIndex] // H
+str[str.endIndex]   // error: after last character
+
+// range
+let range = str.startIndex..<str.endIndex
+str[range]  // "Hello, playground"
+
+let range = str.startIndex...
+let range = ..<str.endIndex
+
+// character
+let index = str.index(after: str.startIndex)
+str[index]  // "e"
+
+// range
+let range = str.index(after: str.startIndex)..<str.endIndex
+str[range]  // "ello, playground"
+
+// character
+let index = str.index(before: str.endIndex)
+str[index]  // d
+
+// range
+let range = str.startIndex..<str.index(before: str.endIndex)
+str[range]  // Hello, playgroun
+
+// character
+let index = str.index(str.startIndex, offsetBy: 7)
+str[index]  // p
+
+// range
+let start = str.index(str.startIndex, offsetBy: 7)
+let end = str.index(str.endIndex, offsetBy: -6)
+let range = start..<end
+str[range]  // play
+
+// character
+if let index = str.index(str.startIndex, offsetBy: 7, limitedBy: str.endIndex) {
+    str[index]  // p
+}

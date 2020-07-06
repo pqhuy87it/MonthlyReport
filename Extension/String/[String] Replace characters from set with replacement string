@@ -1,0 +1,47 @@
+https://gist.github.com/joshavant/d9a94373ec45a7b5d7e7d98263e46e1e
+
+extension String {
+    func replaceCharactersFromSet(characterSet: CharacterSet, replacementString: String) -> String {
+        let scanner = Scanner(string: self)
+        scanner.charactersToBeSkipped = nil
+        
+        let sanitizedString = NSMutableString(capacity: self.count)
+        
+        while(!scanner.isAtEnd) {
+            var buffer: NSString? = ""
+            if scanner.scanUpToCharacters(from: characterSet as CharacterSet, into: &buffer), let buffer = buffer {
+                sanitizedString.append(buffer as String)
+            } else {
+                scanner.scanLocation = scanner.scanLocation + 1
+                sanitizedString.append(replacementString as String)
+            }
+        }
+        
+        return sanitizedString as String
+    }
+}
+
+https://ericasadun.com/2016/07/26/replacing-ranges-in-strings/
+
+import Foundation
+
+public extension String {
+    public func replacing(range: CountableClosedRange<Int>, with replacementString: String) -> String {
+        let start = characters.index(characters.startIndex, offsetBy: range.lowerBound)
+        let end   = characters.index(start, offsetBy: range.count)
+        return self.replacingCharacters(in: start ..< end, with: replacementString)
+    }
+}
+
+var test = "Forty Two"
+for index in 1...test.characters.count {
+    print(test.replacing(range: 1 ... index, with: "XXXX"))
+}
+
+// See also:
+infix operator ..+ {}
+public func ..+ <Bound: Strideable>(lhs: Bound, rhs: Bound.Stride) -> CountableClosedRange<Bound> {
+    return lhs ... lhs.advanced(by: rhs)
+}
+
+test.replacing(range: 1 ..+ 2, with: "XXXX")

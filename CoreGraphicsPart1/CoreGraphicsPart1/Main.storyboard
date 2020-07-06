@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xtz-qM-c7G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sloppy Drawing View Controller-->
+        <scene sceneID="Uqh-mv-LbO">
+            <objects>
+                <viewController id="CgG-MZ-RKo" customClass="SloppyDrawingViewController" customModule="CoreGraphicsPart1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vNl-ZD-9Qx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGR-LG-wIK" customClass="SloppyView" customModule="CoreGraphicsPart1" customModuleProvider="target">
+                                <rect key="frame" x="57" y="98" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Uw-1q-k4u"/>
+                                    <constraint firstAttribute="height" constant="300" id="Awa-GL-WoP"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a45-f8-1az">
+                                <rect key="frame" x="182.5" y="418" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sloppyChangeWithSender:" destination="CgG-MZ-RKo" eventType="valueChanged" id="kNn-xc-Lvl"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a45-f8-1az" firstAttribute="centerX" secondItem="vNl-ZD-9Qx" secondAttribute="centerX" id="0qY-dc-GSj"/>
+                            <constraint firstItem="a45-f8-1az" firstAttribute="top" secondItem="rGR-LG-wIK" secondAttribute="bottom" constant="20" id="FJK-kB-j99"/>
+                            <constraint firstItem="rGR-LG-wIK" firstAttribute="centerX" secondItem="vNl-ZD-9Qx" secondAttribute="centerX" id="Fr8-kc-5Nf"/>
+                            <constraint firstItem="rGR-LG-wIK" firstAttribute="top" secondItem="kls-3K-9eC" secondAttribute="top" constant="10" id="kSf-wv-KLW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kls-3K-9eC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mr3-sA-CyP"/>
+                    <connections>
+                        <outlet property="sloppyView" destination="rGR-LG-wIK" id="hqM-QD-ZDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5e-qh-waF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="369.64285714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fqe-3Q-XOf">
+            <objects>
+                <tabBarController id="Xtz-qM-c7G" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vUA-1Y-N6C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zSP-HH-xvM" kind="relationship" relationship="viewControllers" id="YBu-02-sPK"/>
+                        <segue destination="Cqn-xJ-Edo" kind="relationship" relationship="viewControllers" id="90r-zC-wUP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veH-L1-pod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="46"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="CQh-6Z-sz7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zSP-HH-xvM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="toi-MX-VgP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Abm-1G-qTb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YUw-1E-l0m" kind="relationship" relationship="rootViewController" id="47w-cy-tIr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPD-MU-QR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="-279.24107142857139"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="ie9-n2-Z5b">
+            <objects>
+                <viewController id="YUw-1E-l0m" customClass="DrawViewController" customModule="CoreGraphicsPart1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehz-Cc-C88">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uKw-9Y-wB4">
+                                <rect key="frame" x="10" y="98" width="394" height="32"/>
+                                <segments>
+                                    <segment title="Line"/>
+                                    <segment title="Square"/>
+                                    <segment title="Ellipse"/>
+                                    <segment title="Circle"/>
+                                </segments>
+                                <connections>
+                                    <action selector="brushSegmentedControlValueChangeWithSender:" destination="YUw-1E-l0m" eventType="valueChanged" id="DsS-K9-xj9"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eO-41-sgl" customClass="DrawView" customModule="CoreGraphicsPart1" customModuleProvider="target">
+                                <rect key="frame" x="10" y="134" width="394" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uKw-9Y-wB4" firstAttribute="leading" secondItem="tuP-zt-wFb" secondAttribute="leading" constant="10" id="BB9-Ed-TVS"/>
+                            <constraint firstItem="tuP-zt-wFb" firstAttribute="trailing" secondItem="5eO-41-sgl" secondAttribute="trailing" constant="10" id="HXI-1G-ekv"/>
+                            <constraint firstItem="5eO-41-sgl" firstAttribute="top" secondItem="uKw-9Y-wB4" secondAttribute="bottom" constant="5" id="Q46-a2-C9h"/>
+                            <constraint firstItem="tuP-zt-wFb" firstAttribute="bottom" secondItem="5eO-41-sgl" secondAttribute="bottom" constant="10" id="VvV-YN-jba"/>
+                            <constraint firstItem="uKw-9Y-wB4" firstAttribute="top" secondItem="tuP-zt-wFb" secondAttribute="top" constant="10" id="oWz-eG-T9K"/>
+                            <constraint firstItem="tuP-zt-wFb" firstAttribute="trailing" secondItem="uKw-9Y-wB4" secondAttribute="trailing" constant="10" id="t9c-U2-ISV"/>
+                            <constraint firstItem="5eO-41-sgl" firstAttribute="leading" secondItem="tuP-zt-wFb" secondAttribute="leading" constant="10" id="vDE-zz-rCI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tuP-zt-wFb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d1o-gm-m9H"/>
+                    <connections>
+                        <outlet property="brushSegmentedControl" destination="uKw-9Y-wB4" id="OaH-7B-sFw"/>
+                        <outlet property="drawView" destination="5eO-41-sgl" id="fhX-hJ-xRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9U8-rq-0ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="-290"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="v1V-Ye-alP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cqn-xJ-Edo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="t3O-qE-IhZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="whE-DV-BRY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CgG-MZ-RKo" kind="relationship" relationship="rootViewController" id="fYC-RX-gIK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xj4-Hj-Srg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="369.64285714285711"/>
+        </scene>
+    </scenes>
+</document>

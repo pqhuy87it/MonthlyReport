@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestCheckmark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMV-XW-FeB">
+                                <rect key="frame" x="180.66666666666666" y="353" width="53" height="30"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="btnChangeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7Z-gv-QFI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMW-rs-fid" customClass="CheckboxView" customModule="TestCheckmark" customModuleProvider="target">
+                                <rect key="frame" x="283.66666666666669" y="348" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7cK-kK-yVi"/>
+                                    <constraint firstAttribute="width" constant="40" id="OUV-YW-KX0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqH-mV-QR6" customClass="checkmarkView" customModule="TestCheckmark" customModuleProvider="target">
+                                <rect key="frame" x="283.66666666666669" y="438" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2eX-P2-Oz0"/>
+                                    <constraint firstAttribute="height" constant="40" id="RmY-bK-RnB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aMW-rs-fid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Ep-RX-We9"/>
+                            <constraint firstItem="aMW-rs-fid" firstAttribute="leading" secondItem="oMV-XW-FeB" secondAttribute="trailing" constant="50" id="5eE-AA-SYs"/>
+                            <constraint firstItem="oMV-XW-FeB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I84-L5-UF5"/>
+                            <constraint firstItem="oMV-XW-FeB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KSP-4p-RgI"/>
+                            <constraint firstItem="sqH-mV-QR6" firstAttribute="centerX" secondItem="aMW-rs-fid" secondAttribute="centerX" id="MBu-46-zoP"/>
+                            <constraint firstItem="sqH-mV-QR6" firstAttribute="top" secondItem="aMW-rs-fid" secondAttribute="bottom" constant="50" id="YPE-K2-hsx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkboxView" destination="aMW-rs-fid" id="q1Z-ol-8Rg"/>
+                        <outlet property="checkmarkView" destination="sqH-mV-QR6" id="Kal-X6-zXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

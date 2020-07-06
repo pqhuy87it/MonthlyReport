@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+def pods
+	pod 'Kingfisher', '~> 4.0'
+end
+
+target 'PhotoViewController' do
+	pods
+end

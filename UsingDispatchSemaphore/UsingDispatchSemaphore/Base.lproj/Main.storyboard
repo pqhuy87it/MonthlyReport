@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UsingDispatchSemaphore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-Kh-eCs" customClass="BorderButton" customModule="UsingDispatchSemaphore" customModuleProvider="target">
+                                <rect key="frame" x="270" y="120" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TQo-9Q-OPD"/>
+                                    <constraint firstAttribute="height" constant="30" id="ujt-Mv-rdX"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a46-oh-MCj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdV-yt-iQa" customClass="BorderButton" customModule="UsingDispatchSemaphore" customModuleProvider="target">
+                                <rect key="frame" x="270" y="270" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6yg-cs-z82"/>
+                                    <constraint firstAttribute="width" constant="60" id="tbp-lm-E5L"/>
+                                </constraints>
+                                <state key="normal" title="Resume"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resumePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wq-Rj-1kb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMn-RW-s57" customClass="BorderButton" customModule="UsingDispatchSemaphore" customModuleProvider="target">
+                                <rect key="frame" x="270" y="170" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7jS-OZ-0ev"/>
+                                    <constraint firstAttribute="height" constant="30" id="DzF-O1-hV8"/>
+                                </constraints>
+                                <state key="normal" title="Pause"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pausePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJ3-BO-dvC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ne-Zd-6zY" customClass="BorderButton" customModule="UsingDispatchSemaphore" customModuleProvider="target">
+                                <rect key="frame" x="270" y="220" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="asx-dj-HxI"/>
+                                    <constraint firstAttribute="width" constant="60" id="evo-jh-DVK"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdW-Kw-SGq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Ne-Zd-6zY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GeI-f5-xGz"/>
+                            <constraint firstItem="PdV-yt-iQa" firstAttribute="top" secondItem="6Ne-Zd-6zY" secondAttribute="bottom" constant="20" id="H5U-Nf-2i6"/>
+                            <constraint firstItem="PdV-yt-iQa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKv-uW-SU8"/>
+                            <constraint firstItem="jMn-RW-s57" firstAttribute="top" secondItem="p9A-Kh-eCs" secondAttribute="bottom" constant="20" id="Qqp-aq-H5D"/>
+                            <constraint firstItem="6Ne-Zd-6zY" firstAttribute="top" secondItem="jMn-RW-s57" secondAttribute="bottom" constant="20" id="XYd-0P-Ah0"/>
+                            <constraint firstItem="p9A-Kh-eCs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="qTg-tW-2VQ"/>
+                            <constraint firstItem="jMn-RW-s57" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ujd-1Y-AN4"/>
+                            <constraint firstItem="p9A-Kh-eCs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vtQ-Sl-twE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPause" destination="jMn-RW-s57" id="ycO-IQ-s4c"/>
+                        <outlet property="btnResume" destination="PdV-yt-iQa" id="IPG-8d-XaB"/>
+                        <outlet property="btnStart" destination="p9A-Kh-eCs" id="zcu-SF-DQp"/>
+                        <outlet property="btnStop" destination="6Ne-Zd-6zY" id="lqe-Wa-UE9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="339"/>
+        </scene>
+    </scenes>
+</document>
