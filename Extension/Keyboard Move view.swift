@@ -1,5 +1,7 @@
 https://stackoverflow.com/questions/26070242/move-view-with-keyboard-using-swift
 
+https://github.com/MengTo/Spring/blob/master/Spring/KeyboardLayoutConstraint.swift
+
 override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
