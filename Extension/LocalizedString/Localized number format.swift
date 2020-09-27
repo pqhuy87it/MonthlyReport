@@ -1,6 +1,17 @@
-"You have sold 1000 apps in %d months" = "You have sold %@ apps in %d months";
+https://stackoverflow.com/questions/24960621/struggling-with-nsnumberformatter-in-swift-for-currency
 
-let formatString = NSLocalizedString("You have sold 1000 apps in %d months",
-                                         comment: "Time to sell 1000 apps")
-let quantity = NumberFormatter.localizedString(from: 1000, number: .decimal)
-salesCountLabel.text = String.localizedStringWithFormat(formatString, quantity, period)
+let price = 123.436 as NSNumber
+
+let formatter = NumberFormatter()
+formatter.numberStyle = .currency
+// formatter.locale = NSLocale.currentLocale() // This is the default
+// In Swift 4, this ^ has been renamed to simply NSLocale.current
+formatter.string(from: price) // "$123.44"
+
+formatter.locale = Locale(identifier: "es_CL")
+formatter.string(from: price) // $123"
+
+formatter.locale = Locale(identifier: "es_ES")
+formatter.string(from: price) // "123,44 €"
+
+
